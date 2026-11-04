@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: inherit;
 }
 
 :root{
@@ -15,13 +16,12 @@
     --fonte-texto: "Archivo", Arial, sans-serif;
 }
 
-*{
+body{
     background-color: var(--concreto);
     color: var(--tinta);
     font-family: var(--fonte-texto);
     font-size: 17px;
     height: 1.55;
-    color: inherit;
 }
 
 h1, h2, h3{
@@ -123,4 +123,62 @@ h1, h2, h3{
 
 .cartaz-lateral{
     align-items: flex-start;
+}
+
+.secao{
+    margin-top: 32px;
+}
+
+.titulo-secao{
+    font-size: 64px;
+    margin-bottom: 32px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card{
+    background-color: var(--branco);
+    border: 3px solid var(--tinta);
+    flex: 1 1 340px;
+}
+
+.card .foto{
+    height: 170px;
+}
+
+.foto{
+    background-color: var(--concreto-escuro);
+}
+.foto-azul{
+    background-color: var(--caixa-dagua);
+}
+
+.foto-amarela{
+    background-color: var(--fita);
+}
+
+.foto-tinta{
+    background-color: var(--tinta);
+}
+
+.card-texto{
+    padding: 24px;
+}
+
+.card h3{
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.card-info{
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 2px solid var(--concreto-escuro);
+    font-weight: 600;
+    font-size: 15px;
+
 }
