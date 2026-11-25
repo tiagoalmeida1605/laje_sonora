@@ -31,7 +31,7 @@ h1, h2, h3{
 }
 
 .conteudo{
-    width: 1200px;
+    max-width: 1200px;
     margin-inline: auto;
     padding-inline: 32px;
 }
@@ -103,7 +103,7 @@ h1, h2, h3{
 .cartaz-lateral p{
     font-size: 22px;
     font-weight: 600;
-    height: 1.3;
+    line-height: 1.3;
 }
 
 .botao{
@@ -125,83 +125,90 @@ h1, h2, h3{
     align-items: flex-start;
 }
 
-.secao{
-    margin-top: 32px;
+
+.secao {
+    margin-top: 96px;
 }
 
-.titulo-secao{
+.titulo-secao {
     font-size: 64px;
     margin-bottom: 32px;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
 
-.card{
+.card {
     background-color: var(--branco);
     border: 3px solid var(--tinta);
     flex: 1 1 340px;
 }
 
-.card .foto{
+.card .foto {
     height: 170px;
 }
 
-.foto{
+.foto {
     background-color: var(--concreto-escuro);
 }
-.foto-azul{
+
+.foto-azul {
     background-color: var(--caixa-dagua);
 }
 
-.foto-amarela{
+.foto-amarela {
     background-color: var(--fita);
 }
 
-.foto-tinta{
+.foto-tinta {
     background-color: var(--tinta);
 }
 
-.card-texto{
+.card-texto {
     padding: 24px;
 }
 
-.card h3{
+.card h3 {
     font-size: 36px;
     margin-bottom: 12px;
 }
 
-.card-info{
+.card-info {
     margin-top: 20px;
     padding-top: 16px;
     border-top: 2px solid var(--concreto-escuro);
     font-weight: 600;
     font-size: 15px;
-
+    display: flex;
+    justify-content: space-between;
 }
 
-.passos{
+
+.passos {
     display: flex;
-    padding-inline: 24px;
+    gap: 24px;
+}
+
+.passo {
     border-top: 6px solid var(--tinta);
     padding-top: 20px;
+    flex: 1;
 }
 
-.passo-numero{
+.passo-numero {
     font-family: var(--fonte-cartaz);
     font-size: 96px;
     font-weight: 900;
     line-height: 1;
     color: var(--caixa-dagua);
-}    
+}
 
-.passo h3{
+.passo h3 {
     font-size: 32px;
-    margin-top: 8px;
-    margin-block: 12px;
+    margin-block: 8px 12px;
 }
 
 .rodape{
